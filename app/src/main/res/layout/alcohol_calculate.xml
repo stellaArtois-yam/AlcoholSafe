@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/calBack"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:layout_gravity="end
+"
+            android:text="X"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+
+<!--        <View-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:background="@drawable/dotted_line"-->
+<!--            android:layout_marginBottom="10dp"/>-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round_line"
+
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gender"/>
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="150dp"
+                android:layout_height="47dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:background="@drawable/button_round"
+                android:paddingStart="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round_line"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/weight"/>
+
+            <TextView
+                android:id="@+id/weightText"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/weight"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@id/weight"
+                android:layout_width="115dp"
+                android:layout_height="47dp"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:background="@drawable/button_round"
+                android:paddingStart="20dp"/>
+
+
+            <TextView
+                android:id="@id/kg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/kg"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_line"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/drink_outline_icon"/>
+
+                <TextView
+                    android:id="@+id/drinksText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+
+                    android:gravity="center"
+                    android:text="@string/drinkAlcohol"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/kind"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:background="@drawable/button_round"
+                    android:paddingStart="20dp"/>
+
+                <EditText
+                    android:id="@+id/abv"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:autofillHints=""
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck, LabelFor"
+                    android:paddingStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/percent"
+                    android:layout_width="34dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/percent"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/volume"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:paddingStart="20dp"/>
+
+                <Spinner
+                    android:id="@+id/cup"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:background="@drawable/button_round"
+                    android:paddingStart="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_line"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/clock"/>
+
+            <TextView
+
+                android:id="@+id/lastText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lastTime"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/lastTime"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:background="@drawable/button_round"
+                android:paddingStart="20dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="시간 전"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <android.widget.Button
+            android:id="@+id/calButton"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/calculate"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_round"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

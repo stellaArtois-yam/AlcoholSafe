@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="weight" type="id" />
+    <item name="kg" type="id" />
+</resources>
